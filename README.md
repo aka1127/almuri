@@ -1,41 +1,33 @@
-<!-- DRAFT, for Amine's review. Not legal advice. Sources: docs/research/2026-10-31-inbound-compliance.md (Q1, Q1b, Q6, Q7, PN.15 to PN.18); repo facts: content/drafts/batch-01/facts.md. Items in [brackets] are blanks or unverified points. Remove this comment before publishing. -->
-
 # Free files from Almuri
 
-DRAFT, for Amine's review.
+Almuri makes a comedy show about Lina, a developer who works nights, and the AI tools she can't stand and can't stop using. This repository is the Almuri library: everything we offer in a post, free, in one place. You don't need to comment, follow or sign up to get any of it.
 
-Almuri is a parody comedy show about the AIs you use, starring a jealous AI that lives in a laptop. This repository holds everything we've ever offered in a post, in one place. It's all free here, and you don't need to comment, follow or sign up to get any of it. Repos from our GitHub finds are listed with their owners and links. Files show Almuri and Lina, because they're ours.
+In the show, Lina keeps a wall of sticky notes about her AI tools. The top row reads "it works", and only fixes go up there: open-source projects we feature, credited to their owners, and small things we make. Every one of them is listed here.
 
-Almuri suggests you start with the wallpaper. Almuri is in it.
+made with ai, parody characters, not affiliated with any ai company
 
-Parody. Not affiliated with any AI company.
+## The fixes
 
-## Files
-| File | What it is | Added |
-|---|---|---|
-| [`wallpapers/almuri-and-lina.png`] | Phone wallpaper: Almuri and Lina (1170 x 2532) | [date] |
-| [`cards/1391-name-story.png`] | The name story card: where "Almuri" comes from (Chaucer, 1391) | [date] |
-
-## GitHub finds
-Open-source projects we featured in a post. They belong to their owners; we only link to them. Each row goes live on the day its post goes out, after the posting-day check.
-| Repo | Link | Licence (as checked on 31 Oct 2026) | Featured |
-|---|---|---|---|
-| QingYunA/answer-me-with-html | https://github.com/QingYunA/answer-me-with-html | MIT (embedded font: SIL OFL 1.1) | [6 Nov 2026] |
-| Louis-CFM/coucou | https://github.com/Louis-CFM/coucou | MIT for the code; name, character and sounds reserved by the author | [13 Nov 2026] |
-| vinzdg/codenotch | https://github.com/vinzdg/codenotch | MIT | [date featured: banked, not scheduled] |
-[Re-check each licence on the feature day; facts.md data is from 31 Oct 2026.]
+Nothing here yet. The first fix lands on the day of the first post that offers one.
 
 ## How to get them
-- **Right here, no comment needed:** open a file above, then click "Download raw file" (the download icon). [Button label to check on GitHub.]
-- **Or by comment on Instagram:** comment the keyword named in the post (for example CAST). One message (automatic, or sent by hand) sends you the same file or a link to this page. That is the only message we send.
 
-## What you can do with the files
-Free for personal use: set them as your wallpaper, or share them unchanged with credit to Almuri. Do not sell them, print them on products, or use them in ads or other branding. Almuri, Lina and all character art remain the property of the studio. All other rights are reserved.
-[Licence wording to confirm with the lawyer, L-IN4.]
-The repos under "GitHub finds" are not ours. Their own licences apply.
+- **Right here, with no comment needed.** Open a file, then use the download icon in the top-right corner of the file view. For a fix that lives in someone else's repository, follow its link.
+- **Or by comment on Instagram (@heyalmuri).** Comment the keyword named in the post (for example REPO). You get one message with the same file or link, sent by Meta's own comment-to-message feature or by hand. That is the only message we send, unless you write back.
+
+## What you can do with our files
+
+- **Images, cards and wallpapers we made** are licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). In plain English: set them as your wallpaper, and share them unchanged, for free, with the credit "Almuri" and a link to this page. You may crop or resize a file to fit your screen. You may not sell them, use them in ads, print them on products, or share edited versions. The license's [legal code](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en) is the binding text.
+- **Code we add** to this repository is licensed under the [MIT License](https://opensource.org/license/mit), with the license text in the same folder as the code.
+- **Reserved.** No license here covers the Almuri name or logo, our characters as characters (Lina and the rest of the cast), or our sounds and voices. All rights in them are reserved.
+- **Fixes that belong to other people** keep their owners' licenses. We only link to them.
 
 ## Privacy
-We collect nothing about you when you view or download files here. GitHub shows us only totals for the past 14 days (views, unique visitors, clones, referring sites). Privacy notice for the Instagram message, Ask the cast, story polls and the email list: [PRIVACY.md](PRIVACY.md).
 
-## Contact
-Published by Almuri. Contact: almurihq@gmail.com. [Publisher identity details pending lawyer item L-IN2.]
+We don't collect anything about you when you view or download files here, and we run no analytics on this repository. GitHub shows us only totals for the past 14 days (views, unique visitors, clones, referring sites and the most viewed files). The [privacy notice](PRIVACY.md) explains what happens when you comment a keyword, send a question to the cast, vote in a poll or email us.
+
+## Who publishes this
+
+Almuri, a personal project run by Amine (Paris, France). Contact: almurihq@gmail.com.
+
+Hosted by GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, United States.

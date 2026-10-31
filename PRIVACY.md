@@ -1,56 +1,98 @@
-<!-- DRAFT, for Amine's review. Not legal advice. Sources and reasoning: docs/research/2026-10-31-inbound-compliance.md (Q1b, Q2, Q3, Q5, Q8, Q10 and the "Privacy notice ledger (free repo)" rows PN.1 to PN.22). Items in [brackets] are blanks or unverified points. Remove this comment and every bracket before publishing. -->
-
 # Privacy notice
 
-DRAFT, for Amine's review. Last updated: [date of publication].
+Last updated: 31 Oct 2026.
 
-This notice explains what Almuri does with your data when you comment a keyword under one of our posts, when you send a question to the cast, when you answer a story poll, and when you join our email list.
+## The short version
 
-## Who we are
-Almuri is a parody AI comedy show and studio run by [publisher name: Amine to decide, see lawyer item L-IN2]. Address: [placeholder for Amine; not published until L-IN2 is settled].
-Contact for anything in this notice: almurihq@gmail.com.
+- We collect as little as we can, and almost all of it stays inside Instagram, Facebook, X, GitHub or Gmail.
+- Commenting a keyword gets you one message with the file or link from the post. Nothing else follows unless you write back.
+- When you send a question to the cast or vote in a poll, we never publish who you are, and we delete the story within 7 days.
+- We don't run an email list yet. We sell nothing, add no trackers of our own and build no profiles.
+- Write to almurihq@gmail.com for anything in this notice.
 
-## Visiting this repository
-We do not collect anything about you when you view or download files here, and we run no analytics on this repository.
-GitHub shows us, as the owner of this repository, only totals for the past 14 days: views and unique visitors, clones, referring sites and the most viewed pages. [Inference: GitHub's docs describe these as counts and do not list visitors by name.]
-If you star this repository, your GitHub username appears in its public list of people who starred it, as on any public repository.
-GitHub processes your visit as a data controller under the GitHub Privacy Statement.
+## Who is responsible
 
-## 1. The Instagram message (and the Almuri Facebook Page, where the same keywords may appear)
-When you comment a keyword (for example REPO) under one of our Instagram posts, we send you one message, automatic or by hand, with the file or link the post promised.
+Almuri, a personal project run by Amine (Paris, France), decides how the data described here is used. Contact: almurihq@gmail.com.
+
+This notice covers what Almuri does with your data. Instagram, Facebook, X, GitHub and Google also process your data for their own purposes, as data controllers under their own privacy policies. This notice links to those policies but does not replace them.
+
+## 1. Visiting our GitHub repositories
+
+This applies to the library (github.com/aka1127/almuri) and to the media repository that holds the images used in our posts (github.com/aka1127/almuri-media).
+
+- **What we see:** only totals for the past 14 days, which GitHub shows to every repository owner: views and unique visitors, clones, referring sites and the most viewed files. These are counts. GitHub doesn't show us who visited.
+- **What is public:** if you star a repository, your GitHub username appears in its public list of people who starred it, as on any public repository.
+- **What we never do:** run analytics, set cookies or add trackers of our own, or export the counts with anything that identifies you.
+- **Who handles it:** GitHub processes your visit as a data controller under the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+## 2. The keyword message on Instagram
+
+When you comment a keyword (for example REPO) under one of our Instagram posts, we send you one message with the file or link that the post promised.
+
 - **What we use:** your Instagram username and your comment.
 - **Why:** to send you the one message you asked for. That is the only use.
-- **Legal basis:** your request, made by commenting after the post told you what you would get (consent, GDPR Art. 6(1)(a)). [Legal basis to confirm with the lawyer, L-IN1.]
-- **Who handles it:** an automatic message is sent with Meta Business Suite; a message by hand is sent from the Instagram app. Instagram is provided in the EU by Meta Platforms Ireland Limited, which collects comments and messages under its own privacy policy and names itself there as the data controller for your information. [Meta's exact role for messages between you and a business account is not verified, L-IN6.]
-- **What we never do:** send you a second message about the same comment, copy your username into our email list, or export comments or messages out of Instagram.
-- **How long:** your comment stays public until you delete it. We delete the conversation from our inbox within [30] days. [Check that Business Suite and the Instagram app allow this.]
+- **Legal basis:** your consent (GDPR Art. 6(1)(a)). You give it by commenting the keyword after the post has told you what you will get. If you change your mind before the message arrives, delete your comment. You can also ask us to delete the conversation at any time.
+- **Who handles it:** the message is sent with Meta's own comment-to-message feature, or by hand from the Instagram app. No other tool or bot is involved. Instagram is provided in the EU by Meta Platforms Ireland Limited, which also processes comments and messages for its own purposes under the [Meta Privacy Policy](https://privacycenter.instagram.com/policy).
+- **What we never do:** send a second message about the same comment, ask for your email address or phone number, add you to anything, or copy comments or usernames out of Instagram.
+- **How long:** we delete the conversation from our inbox within 30 days of sending the message. Your copy of the conversation stays in your own inbox, and your comment stays public until you delete it.
 
-## 2. The email list
-If you tick the box on our signup form, we send you new Almuri episodes and the weekly "5 repos worth a star", one email a week at most.
-- **What we use:** your email address, plus a record of your consent: the date and time you signed up and confirmed, the form and its wording, and the date you unsubscribe.
-- **Why:** to send the emails you asked for, and to be able to prove that you asked.
-- **Legal basis:** your consent (GDPR Art. 6(1)(a)). You can withdraw it at any time, in one click, from any email. Withdrawing stops future emails. It does not make the emails we sent before you withdrew unlawful.
-- **Age:** the list is for people aged 16 or older. If we learn that a subscriber is younger, we delete the address.
-- **Who handles it:** MailerLite, our email provider, processes the data on our behalf. MailerLite stores data in Google data centres in the European Union. Its data processing agreement also allows transfers outside the EU, including to MailerLite, Inc. in the United States, under the European Commission's standard contractual clauses. [Which MailerLite company contracts with us: not verified, L-IN6.] You can ask us for a copy of the safeguards.
-- **How long:** until you unsubscribe. After that we keep only the consent record, for [3] years, to prove consent if asked. [Retention period proposed, not verified on an official source.]
+You never have to comment. Every file and link is free in this repository without one.
 
 ## 3. Ask the cast
-You can send a question for the cast with the question sticker in one of our Instagram stories, or by replying to one of our emails.
-- **What we use:** your question, and the Instagram username or email address it comes with. Instagram shows us who sent each sticker reply. [Re-check in the app before publishing.]
-- **Why:** each week we pick one question, paraphrase it and answer it in an episode or a story. We never show who asked, and we never quote your words as you sent them.
-- **Legal basis:** [legal basis to confirm with the lawyer, L-IN1].
-- **Who handles it:** sticker replies stay in Instagram (Meta Platforms Ireland Limited, see section 1). Email replies arrive in our studio inbox, a Gmail mailbox provided by Google (almurihq@gmail.com, created 2026-11-01). [Vendor review of Google's terms for this use needed before the first email goes out.]
-- **What we never do:** copy questions or usernames out of Instagram, add you to the email list, or write to you about your question.
-- **Please do not** put personal details about yourself or anyone else in a question. We skip those questions.
-- **How long:** we delete the questions we did not pick, and the record of who sent the one we picked, within [n] days. [Retention for Amine to set. Check whether Instagram lets us delete sticker replies; if it does not, say how long Instagram keeps them.]
 
-## 4. Story polls
-When you vote in a poll in one of our Instagram stories, Instagram shows us who voted and for which option. We only count the votes. We never note, share or reuse who voted. [Retention of poll results inside Instagram: not verified.]
+You can send the cast a question with the question sticker in one of our Instagram stories.
+
+- **What we use:** your question, and the Instagram username that Instagram shows us next to it.
+- **Why:** to run the show with its audience. From each question story we pick one question, rewrite it in our own words and answer it in an episode or a story.
+- **Legal basis:** our legitimate interest in making the show with the people who watch it (GDPR Art. 6(1)(f)). You chose to send the question, we publish only our own paraphrase with no name, and we delete the rest quickly. You can ask us how we weighed this.
+- **Who handles it:** replies stay inside Instagram (Meta Platforms Ireland Limited, see section 2).
+- **What we never do:** show who asked, quote your exact words, copy questions or usernames out of Instagram, or write to you about your question.
+- **Please don't** put personal details about yourself or anyone else in a question. We skip those questions.
+- **How long:** we delete the story from our story archive within 7 days of posting it. The only thing we keep is our paraphrase of the question we picked, with no name attached. Instagram may keep its own copy of the story and its replies under the Meta Privacy Policy.
+
+## 4. Polls
+
+- **Instagram story polls.** When you vote, Instagram shows us who voted and for which option. We only count the votes. Legal basis: the same legitimate interest as in section 3 (GDPR Art. 6(1)(f)). We note only the totals, never who voted, and we delete the story from our story archive within 7 days of posting it.
+- **X polls.** X doesn't show us who voted or how, so we receive no data about you from your vote. X processes your vote under its own privacy policy.
+
+## 5. Our Facebook Page
+
+Facebook gives us Page Insights: statistics about how people use our Page and its posts. Meta builds these statistics from events its servers record when people visit or interact with our Page and its posts. We see only these aggregated statistics, never the data about you that they are built from. We keep no copy of these statistics outside Facebook. For Page Insights, Meta Platforms Ireland Limited and Almuri are joint controllers, and Meta takes on the main responsibility under its [Page Insights Controller Addendum](https://www.facebook.com/legal/terms/page_controller_addendum), which also explains your rights. Our legal basis is our legitimate interest in understanding, in totals, what our audience watches (GDPR Art. 6(1)(f)).
+
+## 6. When you email us
+
+- **What we use:** your email address, your name if you give it, and what you write.
+- **Why:** to answer you.
+- **Legal basis:** our legitimate interest in answering the people who write to us (GDPR Art. 6(1)(f)). If you write to exercise one of your rights, the legal basis is our legal duty to answer you (GDPR Art. 6(1)(c)).
+- **Who handles it:** almurihq@gmail.com is a Gmail mailbox. Google, which provides Gmail in the EU through Google Ireland Limited, processes messages under the [Google Privacy Policy](https://policies.google.com/privacy).
+- **What we never do:** add your address to a list, or share it.
+- **How long:** we delete the conversation 12 months after your last message. If you wrote to exercise a right, we keep your request and our answer as proof for as long as a claim about it could still be made, then delete them.
+
+## The email list
+
+We don't run an email list. Before we open one, this notice will get its own section on it, and the signup form will link to that section. Nothing in this repository asks for your email address.
 
 ## Your rights
-You can ask us to access, correct or delete your data, to restrict its use, to object to its use (including at any time for the email list), or to send it to you in a portable format where the law provides for it. Write to almurihq@gmail.com. It is free.
-We answer within one month of your request. If a request is complex, the law allows up to two more months; we would tell you so, and why, within the first month.
-If you think we have not respected your rights, you can complain to the CNIL, the French data protection authority (cnil.fr). If you live or work in another EU country, you can also complain to the authority there.
+
+You can ask us to:
+- give you access to your data, or a copy of it;
+- correct it or delete it;
+- restrict how we use it;
+- send it to you in a portable format, where the law provides for it.
+
+You can also object, at any time, to any use based on our legitimate interest (sections 3 to 6), and withdraw your consent to the keyword message (section 2). Withdrawing does not make what we did before unlawful.
+
+Write to almurihq@gmail.com. It is free. We answer within one month. If a request is complex, the law allows up to two more months; we would tell you so, and why, within the first month.
+
+If you think we have not respected your rights, you can complain to the CNIL, the French data protection authority ([how to complain, in French](https://www.cnil.fr/fr/adresser-une-plainte)). If you live or work in another EU country, you can also complain to the authority there.
 
 ## Things we do not do
-No selling or renting of your data, no advertising profiles, no automated decisions about you.
+
+- No selling or renting of your data.
+- No advertising profiles, no tracking across sites.
+- No automated decisions about you.
+- We don't send your data outside the EU ourselves. Meta, X, GitHub and Google may store or transfer data outside the EU under their own policies.
+
+## Changes to this notice
+
+When we change this notice, we change the date at the top. Every earlier version stays visible in this repository's history.
