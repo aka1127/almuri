@@ -4,76 +4,65 @@ Almuri is a comedy show on Instagram (@heyalmuri) about Lina, a developer who wo
 
 This repository is the public library: free files, the privacy notice, and the guide system. Post images live in the separate public repository `aka1127/almuri-media` (`posts/<post id>/NN.jpg`).
 
+The look and all the reusable copy (caption, pinned comment, DM, CTAs, form) are on the **Theme** page in Notion. The model guide is the visual source of truth. Fetch both before building a guide.
+
 ## Rule 1: every piece of content gets a guide, automatically
 
 Whenever Amine asks for content (an episode, reel, carousel, post, script or caption), do all of the steps below **without being asked**, in the same session. Don't stop at the caption.
 
-1. **Pick the keyword.** One word, capitals, easy to type on a phone (LINE, MUG, REPO). Never reuse one: check the Episodes database and "The guides" in `README.md`.
-2. **Write the content**: script or slides, plus the caption (format below).
-3. **Pick the template** (see `guides/README.md`): *How we made it*, *Featured project* or *Quick list*. If the episode is a pure joke with nothing to offer, the guide is "how we made this episode" (the prompts and the steps).
-4. **Make the cover**: `python3 guides/make_cover.py --title "<short title>" --pill "<what you get>" --out guides/assets/cover-<keyword>.jpg` (add `--art` with another image from `guides/assets/` to vary it). Look at the result before using it.
-5. **Write the files**: `guides/<keyword lowercase>/prompts.txt` with every prompt from the guide, plus any other file the guide offers.
-6. **Commit and push**, so the images and files have public URLs.
-7. **Build the Notion guide page** under Lina's Guides (IDs below), by copying the structure and blocks of the model page, "How Lina finally got one line out of an AI". Fetch it first and match it: files box, "Lina says" columns on every step, prompts in code blocks, tip/warning callouts, calls to action, footer.
-   - Images: for each image block, call the Notion `create-attachment` tool with `source_url` = `https://raw.githubusercontent.com/aka1127/almuri/<branch>/guides/assets/<file>.jpg`, and put its `file-upload://` source in the page. One attachment per image block, even when the image repeats. Use `main` as the branch once the file is on main, otherwise the branch you pushed.
-   - Cover: the raw URL of the cover you made.
-   - Don't upload through api.notion.com directly: cloud sessions can't reach it. `create-attachment` with `source_url` works.
-8. **Link it everywhere**: add the guide to the "The guides" section of the Lina's Guides page and of `README.md` (for a featured project, also "The fixes"), and add a row to the Episodes database (Status "Guide drafted", Type, Keyword, Next keyword, Guide page, GitHub files).
-9. **Chain the next keyword**: the 🎬 call to action points to another episode's keyword, usually the previous one, so readers go from guide to guide.
-10. **Report back** with the caption, the Notion link, and what only Amine can do: set the Instagram comment-to-message automation (Meta's own feature only) with the keyword and the Notion link, and post.
+1. **Keyword.** One word, capitals, easy to type, not a word people use by accident in comments (COMMIT is safer than LINE). Never reuse one: check the Episodes database and the Lina's Guides list.
+2. **Content.** Script or slides with the keyword on screen at the end (last 2–3 seconds of a reel, or the last slide). Caption, pinned comment and DM text in the formats on the Theme page. The caption says exactly what they get.
+3. **Template.** *How we made it*, *Featured project* or *Quick list* (IDs below). A pure joke with nothing to offer gets "how we made this episode".
+4. **Cover.** `python3 guides/make_cover.py --title "<about 20 characters>" --pill "<what they get, a few words>" --out guides/assets/cover-<keyword>.jpg --preview`. Look at the preview (desktop, phone, link preview) and fix it until all three read well. Delete the preview file before committing.
+5. **Files.** `guides/<keyword lowercase>/prompts.txt` with every prompt from the guide, plus any other file the guide offers.
+6. **Commit and push**, then note the commit SHA. Images and covers are linked as `https://raw.githubusercontent.com/aka1127/almuri/<commit SHA>/guides/assets/<file>`. Never link to a branch name: branches get deleted.
+7. **Build the page under Drafts** (private), copying the model page block for block. Fetch the model first. The rules:
+   - No columns. Lina, claude and chatgpt speak in callouts whose icon is their face image (`face-lina.jpg`, `face-claude.jpg`, `face-chatgpt.jpg`, pinned raw URL as the callout `icon`).
+   - The thing they commented for is in the first screen ("Copy this"). Code blocks hold one prompt or command, lines of about 30 characters, long commands split with a backslash.
+   - At most 2 images, 2:1 scenes from `guides/assets/`. Images in the page body go through the Notion `create-attachment` tool with `source_url` = the pinned raw URL (one attachment per image block). The page cover and icon take the pinned raw URL directly. Don't upload through api.notion.com directly: cloud sessions can't reach it.
+   - The ending is always: divider, "Want the next fix?", the email synced block reference, the 🎬 callout, the follow + footer synced block reference. Never retype the shared blocks.
+   - Create the page with `preserve_internal_links: true` so links stay links.
+   - Fetch it afterwards and check no `[` placeholder is left.
+8. **🎬 next.** Point it only to a guide whose Episodes row is Posted, with a reel link and a tested automation. Otherwise: "More fixes from the show: Lina's Guides".
+9. **Episodes row.** Status "Guide drafted", Type, Keyword, Guide page, GitHub files (blob link on main).
+10. **Report back** with the caption, the pinned comment, the DM text, the draft link, and what only Amine can do: set Meta's comment-to-message automation (KEYWORD, Keyword, keyword → one DM with the notion.site link), post, pin the comment, and tell Claude "posted" with the reel link. Remind him the guide's GitHub links need this branch merged into main.
 
-Never post, schedule or publish anything yourself, and never change who can see a Notion page. Amine does that.
+**When Amine says an episode is posted:** move its guide from Drafts to Lina's Guides, add it to "The guides" there (keyword · one line · page) and to `README.md` ("The fixes" too for a featured project), fill Reel, Post date and Public link in Episodes, set Status "Posted", and repoint the 🎬 of older guides to this newest one. That move is the only time Claude changes what is public, and only on his word.
 
-## Caption format
-
-```
-<hook: one short line, the joke of the episode>
-
-<one or two lines of context in Lina's voice>
-
-Comment <KEYWORD> and I'll send you <exactly what they get> 💬
-
-made with ai, parody characters, not affiliated with any ai company
-#<3 to 5 relevant hashtags>
-```
-
-The caption must say exactly what people get for the keyword. The message they receive is one message with the guide link, nothing else.
+Never post, schedule or publish anything yourself, and never change Notion sharing settings. Amine does that.
 
 ## Featured projects (someone else's repository)
 
-Check the license before showing anything. Link to their repository, never re-host their code. Credit block (green callout) near the top and again at the end: owner, link, license, "Almuri is not affiliated with [owner]. All credit for [project] goes to them." Name the owner in the episode and the caption too. Add it to "The fixes" in `README.md`. Remind Amine to tell the owner, and remove it the same day if the owner asks.
-
-## Brand rules for guide pages
-
-- Title: "How Lina [did the thing]", "[Project]: the fix Lina found" or "Lina's [list]".
-- Callouts: Lina = gray 💬, claude = orange 🟠, chatgpt = green 🟩, tip = blue 💡, warning = yellow ⚠️, credit = green 🙏, calls to action = purple (💌 email, 🎬 next keyword, 📱 follow), files box = gray 📁.
-- Lina's lines: one or two sentences, tired and funny, then useful. Never mean to the reader.
-- Images in `guides/assets/`: `lina-laptop`, `lina-standing`, `lina-mugs`, `claude`, `chatgpt`, plus the covers. New crops come from `aka1127/almuri-media` posts.
-- Every page ends with the same three calls to action and the footer (copy them from the model page).
+Check the license before showing anything. Link to their repository, never re-host their code. Credit block (green 🙏 callout) near the top and again at the end: owner, link, license, "Almuri is not affiliated with [owner]. All credit for [project] goes to them." Name the owner in the episode and the caption too. Remind Amine to tell the owner, and remove it the same day if the owner asks.
 
 ## Notion (workspace "Almuri HQ's Space", teamspace HQ)
 
 | What | ID |
 | --- | --- |
-| Lina's Guides (public parent of every guide) | `40b0f7c4-4542-815a-9181-fa696cbc82bc` |
-| Model guide: How Lina finally got one line out of an AI | `40b0f7c4-4542-817b-8163-f3c40f588972` |
+| Lina's Guides (public parent; holds the shared blocks) | `40b0f7c4-4542-815a-9181-fa696cbc82bc` |
+| Model guide: How Lina finally got one line out of an AI | `40b0f7c4-4542-8141-bb47-e1550ba0e707` |
+| Drafts (private, new guides start here) | `40b0f7c4-4542-8179-8b7d-fd8cea513f00` |
+| Theme (look and copy) | `40b0f7c4-4542-811b-b9eb-e2c925fa28f6` |
+| Playbook (steps and checks) | `40b0f7c4-4542-8156-9279-e28f356b9796` |
 | Template: How we made it | `40b0f7c4-4542-81b5-96e2-efcfdabcd184` |
 | Template: Featured project | `40b0f7c4-4542-8114-a497-cc970c46805e` |
 | Template: Quick list | `40b0f7c4-4542-81b2-b10d-fe3d9556b218` |
-| Brand kit | `40b0f7c4-4542-811b-b9eb-e2c925fa28f6` |
-| Playbook | `40b0f7c4-4542-8156-9279-e28f356b9796` |
 | Guide Studio (private hub) | `40b0f7c4-4542-812a-8562-d3a3bb16f67e` |
+| Shared block: email signup | `https://app.notion.com/p/40b0f7c44542815a9181fa696cbc82bc#c3a7d90366cf48bd8c8b7061ac60e341` |
+| Shared block: follow + footer | `https://app.notion.com/p/40b0f7c44542815a9181fa696cbc82bc#8c2210c80b414826b65324dc87ef7eda` |
 | Episodes data source | `collection://e93a83bc-f01c-4547-8d7f-4176864eb4dc` |
 | Email list data source | `collection://ccd8cfe0-e93e-42c6-8820-a3025afcb96d` |
-| Email form view | `https://app.notion.com/p/f9d76be514a04dc6b6152850a16090a6?v=40b0f7c445428145a829000c6b8bb551` |
+
+A shared block is placed with `<synced-block-reference url="..."></synced-block-reference>` (left empty). To change the email link or the footer, edit the original on Lina's Guides once.
 
 If the Notion tools aren't available in the session, write the full page in Notion-flavored Markdown to `guides/<keyword>/notion-page.md`, commit it, and tell Amine the page still has to be created.
 
 ## Privacy promises to keep (see PRIVACY.md)
 
 - The keyword message is sent with Meta's own comment-to-message feature or by hand. Never suggest LinkDM, ManyChat or any other DM tool.
-- The email list only collects for now. Never send to it, export it or add a sending tool without updating section 4 of `PRIVACY.md` first.
+- The email list only collects for now. Never send to it, export it or add a sending tool without updating section 4 of `PRIVACY.md` first. Suggest choosing a tool when the second guide ships or the list reaches about 25 people.
 - Guides and files are always free with no signup. The email form is optional, never a gate.
+- No analytics, pixels or link shorteners on guide pages or in DMs.
 
 ## Git
 

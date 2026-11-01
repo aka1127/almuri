@@ -1,39 +1,38 @@
-How Lina finally got one line out of an AI
-Guide: Lina's Guides on Notion (keyword LINE)
-Episode: "I asked for one line." on Instagram @heyalmuri
+How Lina finally got one line out of an AI (keyword LINE)
+From the episode "I asked for one line." on Instagram @heyalmuri
 
---- Step 1: give it rules, not a wish ---
+--- Copy this: paste into any AI chat, then add your diff at the bottom ---
 
-Write a git commit message for the diff below.
+Write a git commit message
+for the diff below.
 
 Rules:
 - Exactly one line.
 - 72 characters max.
-- Start with a verb: Add, Fix, Remove, Update.
-- No intro, no quotes, no explanation, no alternatives.
+- Start with a verb:
+  Add, Fix, Remove, Update.
+- No intro, no quotes,
+  no explanation.
+
+Examples of the format:
+Fix crash when cart is empty
+Add dark mode to settings
+Remove unused login helper
+
+Reply with the message only.
 
 Diff:
 [paste your diff here]
 
 (Get your diff with: git diff --staged, after git add.)
 
---- Step 2: show it what one line looks like ---
+--- In the terminal (Claude Code, print mode) ---
 
-Here are 3 commit messages in the format I want:
-Fix crash when the cart is empty
-Add dark mode toggle to settings
-Remove unused login helper
-
-Write one more, for the diff below. Reply with the message only.
-
-Diff:
-[paste your diff here]
-
---- Step 3: never type it again ---
-
-Chat app: paste the Rules from Step 1 into your AI tool's custom instructions.
-
-Terminal (Claude Code, print mode):
-git diff --staged | claude -p "Write a git commit message for this diff. Exactly one line, 72 characters max, starts with a verb. Reply with the message only."
+git diff --staged | claude -p \
+"Write a git commit message \
+for this diff. Exactly one \
+line, 72 characters max, \
+starts with a verb. Reply \
+with the message only."
 
 made with ai, parody characters, not affiliated with any ai company

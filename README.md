@@ -10,7 +10,7 @@ made with ai, parody characters, not affiliated with any ai company
 
 Each guide goes with an episode: how we made something, step by step with every prompt, or a project by someone else that Lina found, credited to its owner. Guides are published as Notion pages for easy reading on a phone, and each one links back to its files here. How we make them: [the guide system](guides/README.md).
 
-- **How Lina finally got one line out of an AI** (keyword LINE): one-line commit messages, first try. Prompts: [`guides/line/`](guides/line/).
+- **How Lina finally got one line out of an AI** (keyword LINE): one-line commit messages, first try. Prompts: [`guides/line/prompts.txt`](guides/line/prompts.txt).
 
 ## The fixes
 
