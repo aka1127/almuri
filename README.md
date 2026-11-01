@@ -8,7 +8,7 @@ made with ai, parody characters, not affiliated with any ai company
 
 ## The guides
 
-Each guide shows how we made something in a post, step by step, with every prompt. Guides are published as Notion pages for easy reading on a phone, and each one links back to its files here.
+Each guide goes with an episode: how we made something, step by step with every prompt, or a project by someone else that Lina found, credited to its owner. Guides are published as Notion pages for easy reading on a phone, and each one links back to its files here. How we make them: [the guide system](guides/README.md).
 
 Nothing here yet. The first guide lands on the day of the first post that offers one.
 
@@ -20,7 +20,7 @@ Nothing here yet. The first fix lands on the day of the first post that offers o
 
 - **Right here, with no comment needed.** Open a file, then use the download icon in the top-right corner of the file view. For a fix that lives in someone else's repository, follow its link.
 - **Or by comment on Instagram (@heyalmuri).** Comment the keyword named in the post (for example 3D). You get one message with the guide or file, sent by Meta's own comment-to-message feature or by hand. That is the only message we send, unless you write back.
-- **Want the next one first?** Each guide page ends with an optional signup for the Almuri email list. You never need it to get a guide or a file. The [privacy notice](PRIVACY.md#4-the-email-list) explains how the list works.
+- **Want to hear about the next one?** Each guide page ends with an optional form to leave your email. You never need it to get a guide or a file. The [privacy notice](PRIVACY.md#4-the-email-list) explains how the list works.
 
 ## What you can do with our files
 

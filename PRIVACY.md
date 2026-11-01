@@ -4,7 +4,7 @@ Last updated: 1 Nov 2026.
 
 ## The short version
 
-- We collect as little as we can, and almost all of it stays inside Instagram, Facebook, X, GitHub, Notion, Brevo or Gmail.
+- We collect as little as we can, and almost all of it stays inside Instagram, Facebook, X, GitHub, Notion or Gmail.
 - Commenting a keyword gets you one message with the link from the post. Nothing else follows unless you write back.
 - Our guides are free. Joining the email list is optional and never required to get a guide or a file.
 - When you send a question to the cast or vote in a poll, we never publish who you are, and we delete the story within 7 days.
@@ -49,15 +49,15 @@ You never have to comment. Every file and link is free in this repository withou
 
 ## 4. The email list
 
-At the end of each guide page you can join the Almuri email list. It is optional: every guide and file stays free without it.
+At the end of each guide page you can leave your email address to hear about new episodes. It is optional: every guide and file stays free without it.
 
 - **What we use:** your email address, and your first name if you choose to give it.
-- **Why:** to send you new guides and files, news about the show, and, once we have them, our own paid products. Every email says clearly when it is selling something.
-- **Legal basis:** your consent (GDPR Art. 6(1)(a)). You give it on the signup form, then confirm it from a first email (double opt-in). Until you confirm, we send you nothing else.
-- **How to leave:** every email has an unsubscribe link that works in one click. You can also write to almurihq@gmail.com.
-- **Who handles it:** the list runs on Brevo, provided by Sendinblue SAS (France), which processes your address on our behalf as our processor, under a data processing agreement and its [privacy policy](https://www.brevo.com/legal/privacypolicy/).
-- **What we never do:** sell, rent or give your address to anyone, sponsors included; add you without your confirmation; or track whether you open our emails or click their links. We turn open and click tracking off.
-- **How long:** until you unsubscribe. We then delete your address within 30 days, except for a do-not-email entry that stops it from being added again by mistake. A signup you never confirm is deleted after 30 days. Because we don't track opens, every 3 years we email you once to ask whether you want to stay, and remove you if you don't confirm.
+- **Why:** to email you when we post a new episode, guide or file. Later, this may include our own paid products; any email that sells something will say so clearly. We haven't sent any emails yet. Before the first one goes out, this section will name the tool we send it with.
+- **Legal basis:** your consent (GDPR Art. 6(1)(a)). You give it by sending the form, which tells you what you will get.
+- **How to leave:** write to almurihq@gmail.com, or reply "stop" to any email we send. Once we send emails, each one will also have an unsubscribe link.
+- **Who handles it:** the form is a Notion form, and the answers are stored in our Notion workspace. For this, Notion Labs, Inc. (United States) processes your address on our behalf as our processor, under its data processing addendum, which covers transfers outside the EU.
+- **What we never do:** sell, rent or give your address to anyone, sponsors included; use it for anything but the emails described above; or add you to the list without your form.
+- **How long:** until you leave the list. We then delete your address within 30 days. If we still haven't sent the list its first email 2 years after you joined, we delete your address.
 
 ## 5. Ask the cast
 
@@ -108,7 +108,7 @@ If you think we have not respected your rights, you can complain to the CNIL, th
 - No selling, renting or sharing of your data, sponsors included.
 - No advertising profiles, no tracking across sites.
 - No automated decisions about you.
-- We don't send your data outside the EU ourselves. Meta, X, GitHub, Notion and Google may store or transfer data outside the EU under their own policies.
+- The email list is stored in Notion, in the United States, under Notion's data processing addendum (section 4). Apart from that, we don't send your data outside the EU ourselves. Meta, X, GitHub, Notion and Google may store or transfer data outside the EU under their own policies.
 
 ## Changes to this notice
 
