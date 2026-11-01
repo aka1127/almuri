@@ -4,6 +4,8 @@ Almuri is a comedy show on Instagram (@heyalmuri) about Lina, a developer who wo
 
 This repository is the public library: free files, the privacy notice, and the guide system. Post images live in the separate public repository `aka1127/almuri-media` (`posts/<post id>/NN.jpg`).
 
+The studio's content and posting system lives in the private repository `aka1127/company-hq`. Its guide spec, `content/strategy/2026-11-01-guides.md`, is the source for the posting copy (caption ask, first comment, DM, the TikTok and X lines) and the voice rules: social lines lowercase with no full stops, the asks in the studio voice, at most one emoji per caption from the cast set (🟢 📌 🗂️ ☕ 🧶 📣). When a session has both repositories, captions are written there (`content/drafts/`) and the guide is built here.
+
 The look and all the reusable copy (caption, pinned comment, DM, CTAs, form) are on the **Theme** page in Notion. The model guide is the visual source of truth. Fetch both before building a guide.
 
 ## Rule 1: every piece of content gets a guide, automatically
@@ -11,7 +13,7 @@ The look and all the reusable copy (caption, pinned comment, DM, CTAs, form) are
 Whenever Amine asks for content (an episode, reel, carousel, post, script or caption), do all of the steps below **without being asked**, in the same session. Don't stop at the caption.
 
 1. **Keyword.** One word, capitals, easy to type, not a word people use by accident in comments (COMMIT is safer than LINE). Never reuse one: check the Episodes database and the Lina's Guides list.
-2. **Content.** Script or slides with the keyword on screen at the end (last 2–3 seconds of a reel, or the last slide). Caption, pinned comment and DM text in the formats on the Theme page. The caption says exactly what they get.
+2. **Content.** Script or slides with the keyword on screen at the end (last 2–3 seconds of a reel, or the last slide). Instagram: the situation line first, then `Comment <KEYWORD> and we'll DM you <the exact thing>, free, nothing else`, the beats, `Or open Lina's Guides from the link in bio, no comment needed`, the disclosure, the tags; the next-move poll goes on the story sticker. TikTok and X keep their next-move lines; X gets the guide link in a studio reply, TikTok `free guide: lina's guides, link in bio` once its bio link is live. First comment and DM: the formats on the Theme page and in the company-hq guide spec.
 3. **Template.** *How we made it*, *Featured project* or *Quick list* (IDs below). A pure joke with nothing to offer gets "how we made this episode".
 4. **Cover.** `python3 guides/make_cover.py --title "<about 20 characters>" --pill "<what they get, a few words>" --out guides/assets/cover-<keyword>.jpg --preview`. Look at the preview (desktop, phone, link preview) and fix it until all three read well. Delete the preview file before committing.
 5. **Files.** `guides/<keyword lowercase>/prompts.txt` with every prompt from the guide, plus any other file the guide offers.

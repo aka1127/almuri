@@ -51,9 +51,10 @@ You never have to comment. Every file and link is free in this repository withou
 
 At the end of each guide page you can leave your email address to hear about new episodes. It is optional: every guide and file stays free without it.
 
-- **What we use:** your email address, and your first name if you choose to give it.
+- **What we use:** your email address, your first name if you choose to give it, and a record of your consent: the date and time you sent the form and the wording you agreed to.
 - **Why:** to email you when we post a new episode, guide or file. Later, this may include our own paid products; any email that sells something will say so clearly. We haven't sent any emails yet. Before the first one goes out, this section will name the tool we send it with.
 - **Legal basis:** your consent (GDPR Art. 6(1)(a)). You give it by ticking the consent box and sending the form, which tells you what you will get.
+- **Age:** the list is for people aged 16 or older. If we learn that a subscriber is younger, we delete the address.
 - **How to leave:** write to almurihq@gmail.com, or reply "stop" to any email we send. Once we send emails, each one will also have an unsubscribe link.
 - **Who handles it:** the form is a Notion form, and the answers are stored in our Notion workspace. For this, Notion Labs, Inc. (United States) processes your address on our behalf as our processor, under its data processing addendum, which covers transfers outside the EU.
 - **What we never do:** sell, rent or give your address to anyone, sponsors included; use it for anything but the emails described above; or add you to the list without your form.
