@@ -1,6 +1,8 @@
 # The Almuri guide system
 
-Every episode that offers something gets a guide: a branded Notion page that Lina "presents", with a GitHub link for the files, a credit for anyone whose work we feature, and the same calls to action at the end. Follow this for every episode, whatever the episode is about.
+Every episode gets a guide: a branded Notion page that Lina "presents", with a GitHub link for the files, a credit for anyone whose work we feature, and the same calls to action at the end. Follow this for every episode, whatever the episode is about.
+
+**It's automatic.** Any Claude chat on this repository follows `CLAUDE.md` at the root: when asked for content, it also makes the cover, the files, the Notion page and the links. The model page is "How Lina finally got one line out of an AI" (keyword LINE).
 
 **Where the work happens:** Guide Studio in the Almuri HQ Notion workspace (private). It has the same playbook, the brand kit, the branded templates ready to duplicate, the Episodes tracker and the email list. This folder is the public copy of the rules, and the Markdown templates in `templates/` are a backup of the Notion ones. If you change one, change both.
 
@@ -30,11 +32,11 @@ Every template is built from the same blocks in [`templates/blocks.md`](template
 
 Set these once in Notion, then duplicate the template page so every guide starts with them.
 
-- **Cover:** the Lina banner (same image on every page, from the almuri-media repository).
-- **Icon:** the Almuri logo.
+- **Cover:** made per guide with `guides/make_cover.py` (dark navy, white title, lime pill, Lina on the right).
+- **Icon:** 💬 until there is an Almuri logo.
 - **Title format:** "How Lina [did the thing]" for made-it guides, "[Project name]: the fix Lina found" for featured projects, "Lina's [list]" for quick lists.
-- **Lina explains:** each step opens with a "Lina says" block: a small Lina image next to a callout in her voice (one or two lines, tired and funny, then useful). Use Notion columns: image on the left (about 1/4 width), callout on the right. Keep a folder of 6–8 Lina poses (pointing, facepalm, coffee, thumbs up, laptop, shrug) and reuse them.
-- **Callout colors:** Lina says = gray, tips = blue, warnings = yellow, credit = green, calls to action = purple. Never other colors.
+- **Lina explains:** each step opens with a "Lina says" block: a small Lina image next to a callout in her voice (one or two lines, tired and funny, then useful). Use Notion columns: image on the left (about 1/4 width), callout on the right. Lina images are in `guides/assets/` (cut from the almuri-media posts); reuse them.
+- **Callout colors:** Lina says = gray, claude = orange, chatgpt = green, tips = blue, warnings = yellow, credit = green, calls to action = purple. Never other colors.
 - **Footer:** the same footer on every page (in `blocks.md`): disclaimer, contact, privacy link.
 - **Font and width:** Notion default font, full width off, so it reads well on a phone.
 
